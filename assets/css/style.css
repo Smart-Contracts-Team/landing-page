@@ -380,9 +380,14 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 #hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Para que el texto quede a la izquierda y la imagen a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
   padding-top: 72px;
   position: relative;
-  text-align: center;
+  text-align: left;
+  height: 100%; /* Asegura que se tome el 100% de la altura del viewport */
 }
 #hero h1 {
   margin: 0 0 10px 0;
